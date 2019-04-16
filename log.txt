@@ -1,0 +1,12 @@
+---QUERY FOR THE SONG be happy---
+Artist(s): [object Object]
+Title: Don't Worry Be Happy
+Preview Link: null
+
+
+---QUERY FOR THE SONG born to be yours---
+Artist(s): [object Object],[object Object]
+Title: Born To Be Yours
+Preview Link: null
+
+

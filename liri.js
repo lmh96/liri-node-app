@@ -16,6 +16,17 @@ function concertSearch(band) {
             console.log("Venue: " + venue);
             console.log("location: " + location);
             console.log("Date: " + date);
+
+            let text = "---QUERY FOR " + band + " UPCOMING CONCERTS---\n"
+            + "Venue: " + venue + "\n"
+            + "Location: " + location + "\n"
+            + "Date: " + date + "\n\n\n";
+
+        fs.appendFile("log.txt", text, function(err) {
+            if(err) {
+                console.log(err);
+            }
+        })
         }
     });
 }
@@ -44,6 +55,17 @@ function songSearch(song) {
         console.log("Album: " + albumTitle);
         console.log("Title: " + title);
         console.log("Preview Link: " + link);
+
+        let text = "---QUERY FOR THE SONG " + song + "---\n"
+            + "Artist(s): " + artists + "\n"
+            + "Title: " + title + "\n"
+            + "Preview Link: " + link + "\n\n\n";
+
+        fs.appendFile("log.txt", text, function(err) {
+            if(err) {
+                console.log(err);
+            }
+        })
     })
 }
 
@@ -66,6 +88,21 @@ function movieSearch(movie) {
         console.log("Available in: " + language);
         console.log("Plot: " + plot);
         console.log("Primary actors: " + actors);
+
+        let text = "---QUERY FOR THE MOVIE " + movie + "---\n"
+            + "Title: " + title + "\n"
+            + "Year: " + year + "\n"
+            + "Ratings: IMDB " + imdb + ", Rotten Tomatoes: " + rt + "\n"
+            + "Filmed in: " + country + "\n"
+            + "Available in: " + language + "\n"
+            + "Plot: " + plot + "\n"
+            + "Primary actors: " + actors + "\n\n\n";
+
+        fs.appendFile("log.txt", text, function(err) {
+            if(err) {
+                console.log(err);
+            }
+        })
     });
 }
 
