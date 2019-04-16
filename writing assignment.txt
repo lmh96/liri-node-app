@@ -1,0 +1,5 @@
+I read this: https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced
+
+
+it explains what callbacks are, because functions are objects in javascript you can pass them as parameters 
+to other functions and then call the passed function in that function.  that is a callback.
